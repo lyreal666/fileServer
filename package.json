@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "koa": "^2.5.1",
-    "koa-static": "^4.0.3"
+    "koa-route": "^3.2.0",
+    "koa-static": "^4.0.3",
+    "nunjucks": "^3.1.3"
   }
 }
