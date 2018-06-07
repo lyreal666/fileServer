@@ -2,19 +2,54 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="/resource/css/bootstrap.css">
+	<link rel="stylesheet" href="/resource/upload.css">
+	<script src="/resource/js/jquery.js"></script>
+	<scri
+            pt src="/resource/js/popper.js"></script>
+	<script src="/resource/js/bootstrap.js"></script>
 	<title></title>
 	<noscript> js被禁用 </noscript>
 </head>
 <body>
-	<center>
-		<form enctype="multipart/form-data" method="post" action="{{fileServer}}">
-			<p><input type="file" id="inputFile" name="inputFile"></p>
-			<p align="left">图片预览</p>
-			<div id="preview" style="width: 500px; height:200px; border: 3px solid black">
+	<div class="container">
+		<div class="card fileInfo">
+			<div class="card-header">
+				文件信息
 			</div>
-			<div id="fileInfo" style="width: 400px; height: 200px; border: 1px solid black; margin-top: 10px"></div>
+			<div class="card-block">
+				<h4 class="card-title">test.zip</h4>
+				<p class="card-text">这是一个压缩包.</p>
+			</div>
+		</div>
+		<form>
+			<div class="form-group row">
+				<label for="user" class="col-sm-2 form-control-label">上传用户名</label>
+				<div class="col-sm-10">
+					<input type="text" class="form-control" id="user" placeholder="填写用户名">
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-md-2">文件类型</label>
+				<select class="c-select col-md-3 col-md-offset-4">
+					<option value="1">压缩包</option>
+					<option value="2">音频文件</option>
+					<option value="3">文本文件</option>
+					<option value="3">普通文件</option>
+				</select>
+			</div>
+			<label class="file">
+				<input type="file" id="file">
+			</label>
+			<div class="form-group row">
+				<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-secondary">Sign in</button>
+				</div>
+			</div>
 		</form>
-	</center>
+	</div>
 	
 </body>
 <script type="text/javascript" src="/resource/upload.js"></script>
